@@ -2,7 +2,7 @@ Coursera - Getting and Cleaning Data
 ----------------------------------------------------------------------------------
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis
 
-Two files included: run_analysis.R and CodeBook.md
+Two files included: "run_analysis.R" and "CodeBook.md"
 
 Noted: In order to run run_analysis.R, please download and unzip following file
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
