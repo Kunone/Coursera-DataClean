@@ -36,6 +36,7 @@ filteredaverages <- dcast(filteredMelt, volunteer + activity ~ variable, mean)
 allMelt <- melt(dataset,id.vars=c("volunteer","activity"))
 allAverages <- dcast(allMelt, volunteer + activity ~ variable, mean)
 
-# write files to local
+# write files to local.
+# Not sure which one we should submit, so have to submit both...
 write.table(filteredaverages,"Mean_and_Std_Per_Subject_and_Activity.txt",row.names=FALSE)
 write.table(allAverages,"Per_Subject_and_Activity.txt",row.names=FALSE)
