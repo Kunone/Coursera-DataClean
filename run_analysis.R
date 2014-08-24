@@ -32,7 +32,10 @@ filteredDataset <- dataset[, c(col_mean_and_standard, "volunteer", "activity")]
 # reshape the data frame to display average of each variable for each activity and each volunteer.
 library(reshape2)
 filteredMelt <- melt(filteredDataset,id.vars=c("volunteer","activity"))
-averages <- dcast(filteredMelt, volunteer + activity ~ variable, mean)
+filteredaverages <- dcast(filteredMelt, volunteer + activity ~ variable, mean)
+allMelt <- melt(dataset,id.vars=c("volunteer","activity"))
+allAverages <- dcast(allMelt, volunteer + activity ~ variable, mean)
 
 # write files to local
-write.csv(averages,"Mean_and_Std_Per_Subject_and_Activity.txt",row.names=FALSE)
+write.table(filteredaverages,"Mean_and_Std_Per_Subject_and_Activity.txt",row.names=FALSE)
+write.table(allAverages,"Per_Subject_and_Activity.txt",row.names=FALSE)
