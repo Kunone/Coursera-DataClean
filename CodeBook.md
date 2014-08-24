@@ -29,4 +29,5 @@ key variables
 5. col_mean_and_standard: filtered feature names.
 6. dataset: whole data set containing all data.
 7. filteredDataset: whole data set but with filtered variables.
-8. averages: reshaped clean data set.
+8. filteredaverages: reshaped clean data set based on filtered features.
+9. allAverages: reshaped clean data set based on all features.
